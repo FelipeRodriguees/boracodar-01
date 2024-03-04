@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #FFF;
+    font-family: Roboto;
+}
+
+body {
+    background: #0F0D13;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* or any custom width */
+
+    display: grid;
+    grid-template-columns: 266.48px 357.71px;
+    grid-template-rows: auto auto;
+    gap: 32px;
+    max-width: 656.19px;
+    max-height: 498px;
+}
+
+h1 {
+    font-size: 24.01px;
+    font-weight: bold;
+    padding-bottom: 9.6px;
+}
+
+.sub-title {
+    font-size: 19.21px;
+    font-weight: 400;
+    color: #E1E1E6;
+}
+
+.player-controls {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 0px;
+}
+
+.player-controls img {
+    cursor: pointer;
+}
+
+.progress-bar-background {
+    background: #5f586f;
+    height: 6px;
+    border-radius: 9.6px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress-bar-background::before {
+    content: '';
+    display: block;
+    border-radius: 9.6px;
+    height: 6px;
+    background: #C1BFC4;
+    width: 96.25%;
+}
+
+.player-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-time span {
+    color: #C4C4CC;
+}
+
+.base-player {
+    background: #2A2141;
+    border-radius: 9.6px;
+}
+
+.large-player {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    box-sizing: border-box;
+    padding: 38.41px;
+    width: 266.48px;
+    height: 498px;
+}
+
+.large-player-img {
+    width: 189.66px;
+    height: 189.66px;
+    margin-top: 12.58px;
+    margin-bottom: 28.81px;
+}
+
+.medium-player {
+    grid-column: 2; /* Segunda coluna */
+    grid-row: 1; /* Primeira linha */
+    box-sizing: border-box;
+    padding: 28.81px;
+    width: 357.71px;
+    height: 266.68px; 
+}
+
+.medium-player-info-box {
+    display: flex;
+}
+
+.medium-player-img {
+    margin-right: 29px;
+    width: 84.03px;
+    height: 84.03px;
+}
+
+.medium-player-details {
+    margin-top: 15.71px;
+}
+
+.small-player {
+    grid-column: 2; /* Segunda coluna */
+    grid-row: 2; /* Segunda linha */
+  
+    box-sizing: border-box;
+    padding: 28.81px;
+    width: 357.71px;
+    height: 199.26px;
+}
+
+.small-player-info-box {
+    display: flex;
+}
+
+.small-player-img {
+    margin-right: 29px;
+    width: 84.03px;
+    height: 84.03px;
+}
+
+.small-player-details {
+    margin-top: 15.71px;
+}
